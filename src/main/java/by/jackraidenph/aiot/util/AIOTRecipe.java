@@ -33,10 +33,11 @@ public class AIOTRecipe extends CustomRecipe {
         for (int j = 0; j < container.getContainerSize(); ++j) {
             ItemStack itemstack = container.getItem(j);
 
-            if (!(itemstack.getItem() instanceof TieredItem) | (itemstack != ItemStack.EMPTY))
-                return false;
-
             if (!itemstack.isEmpty()) {
+
+                if (!(itemstack.getItem() instanceof TieredItem))
+                    return false;
+
                 if (itemstack.getItem() instanceof SwordItem)
                     tools[0] = true;
                 else if (itemstack.getItem() instanceof PickaxeItem)
