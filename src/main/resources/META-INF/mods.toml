@@ -1,0 +1,29 @@
+
+modLoader="javafml" #mandatory
+loaderVersion="[37,)" #mandatory
+license="All rights reserved"
+#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
+[[mods]] #mandatory
+modId="aiot" #mandatory
+version="${file.jarVersion}" #mandatory
+displayName="All In One Tools++" #mandatory
+#updateJSONURL="https://change.me.example.invalid/updates.json" #optional
+#displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
+logoFile="logo.png" #optional
+credits="JackRaidenPH" #optional
+authors="JackRaidenPH" #optional
+description='''
+Adds a basic set of all in one tools as well as ones made of more exotic materials.
+'''
+[[dependencies.aiot]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[37,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.aiot]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.17.1,1.18)"
+    ordering="NONE"
+    side="BOTH"
